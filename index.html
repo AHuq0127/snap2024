@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Catalog</title> <!-- Sets the page title -->
+    <link rel="stylesheet" href="style.css"> <!-- Links to the stylesheet for styling the page -->
+</head>
+<body>
+<header class="main-header">
+    <h1 class="title">Car Catalog</h1> <!-- Main heading of the page -->
+</header>
+<footer class="main-footer">
+    <small>Ahin Huq SnapChat Academy 2024</small> <!-- Footer content -->
+</footer>
+
+<nav class="car-categories">
+    <nav class="car-categories vertical-box"> <!-- Nested navigation for car categories -->
+
+        <div class="car-category">
+            <button class="category-btn" onclick="displayCars('Electric')">Electric</button> <!-- Button for selecting electric cars -->
+            <img src="images/electric.webp" alt="Electric"> <!-- Image representing electric cars -->
+        </div>
+        <div class="car-category">
+            <button class="category-btn" onclick="displayCars('Sedan')">Sedan</button> <!-- Button for selecting sedan cars -->
+            <img src="images/c.webp" alt="Sedan"> <!-- Image representing sedan cars -->
+        </div>
+        <div class="car-category">
+            <button class="category-btn" onclick="displayCars('Coupe')">Coupe</button> <!-- Button for selecting coupe cars -->
+            <img src="images/s.webp" alt="Coupe"> <!-- Image representing coupe cars -->
+        </div>
+        <div class="car-category">
+            <button class="category-btn" onclick="displayCars('Truck')">Truck</button> <!-- Button for selecting truck cars -->
+            <img src="images/t.webp" alt="Truck"> <!-- Image representing truck cars -->
+        </div>
+        <div class="car-category">
+            <button class="category-btn" onclick="displayCars('Sport')">Sport</button> <!-- Button for selecting sports cars -->
+            <img src="images/ss.webp" alt="Sports"> <!-- Image representing sports cars -->
+        </div>
+        <!-- Add more categories if necessary -->
+    </nav>
+    <aside id="final-selection">
+        <h2>Your Selections:</h2> <!-- Heading for the user's final selections -->
+        <div id="final-selections-list">
+            <!-- Final car selections will be added here -->
+        </div>
+    </aside>
+    <section id="car-display-container">
+        <!-- The list of cars will appear here after clicking a category button -->
+    </section>
+
+    <script src="scripts.js"></script> <!-- Links to the JavaScript file that handles the dynamic behavior -->
+</nav>
+
+</body>
+</html>

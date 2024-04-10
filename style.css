@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+.main-header {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+}
+
+.main-footer small {
+    font-size: 0.9rem;
+}
+
+
+.title {
+    margin: 0;
+}
+
+/* Navigation styles */
+.car-category img {
+    max-width: 100%;
+    max-height: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+
+.category-btn {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.category-btn:hover {
+    background-color: rgba(204, 204, 204, 0.8); /* Slightly darker on hover */
+}
+
+/* Car display container styles */
+#car-display-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    overflow-y: auto;
+    padding-top: 100px;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent footer */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+/* Final selection styles */
+#final-selection {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* You may also want to style the title inside the final selections */
+#final-selection h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+
+.final-car-selection {
+    display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.final-car-selection:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.final-car-selection:active {
+    transform: translateY(-2px);
+}
+
+.final-car-selection img {
+    width: 100px;
+    height: auto;
+}
+.final-car-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.car-option h3 {
+    color: white;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.car-option img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.final-car-content h2 {
+    margin-bottom: 20px;
+}
+
+.final-car-content h3 {
+    margin-bottom: 10px;
+}
+
+.final-car-content img {
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.final-car-content button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#final-car-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+.vertical-box {
+    border: 15px solid #000;
+    background: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+
+/* Responsive adjustments for final selection and car items */
+@media (max-width: 768px) {
+    .car-card {
+        width: calc(50% - 20px);
+    }
+
+    #final-selection {
+        position: static;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .car-card {
+        width: 100%;
+    } }
